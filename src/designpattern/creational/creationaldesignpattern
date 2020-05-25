@@ -30,3 +30,20 @@ Pattern #1: Factory method pattern
 1.When a class doesn't know what sub-classes will be required to create
 2.When a class wants that its sub-classes specify the objects to be created.
 3.When the parent classes choose the creation of objects to its sub-classes.
+------------------------------------------------------------------------------------------------------------------------
+Pattern #2: Abstract Factory method
+- define an interface or abstract class for creating families of related (or dependent)
+objects but without specifying their concrete sub-classes.
+- lets a class returns a factory of classes.
+- is also known as Kit.
+
+-Advantages
+1. isolates the client code from concrete classes
+2. It eases the exchanging of object families.
+3. It promotes consistency among objects.
+
+-Usage
+1.When the system needs to be independent of how its object are created.
+2.When the family of related objects has to be used together.
+3.When you want to provide a library of objects that does not show implementations and only reveals interfaces.
+4.When the system needs to be configured with one of a multiple family of objects.
