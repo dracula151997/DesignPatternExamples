@@ -1,0 +1,32 @@
+Creational design patterns are concerned with the way of creating objects(creating an object of a class)
+Everyone known an object is created by using "new" keyword in java
+
+Student student = new Student();
+
+Sometimes, the nature of the object must be changed according to the nature of the program. In such case, we must get
+the help of creational design pattern to provide more general and flexible approach.
+
+Types:
+1. Factory method pattern
+2. Abstract Factory pattern
+3. Singleton pattern
+4. Prototype pattern
+5. Builder pattern
+6. Object pool pattern
+
+Pattern #1: Factory method pattern
+- define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.
+- is also known as Virtual Constructor
+
+* In a simple word, A factory method is used to create multiple object types in a single interface.
+
+-Advantages:
+1. allows the subclasses to choose the type of object to create
+2. It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code.
+   That means the code interacts solely with the resultant interface or abstract class,
+   so that it will work with any classes that implement that interface or that extends that abstract class.
+
+-Usage
+1.When a class doesn't know what sub-classes will be required to create
+2.When a class wants that its sub-classes specify the objects to be created.
+3.When the parent classes choose the creation of objects to its sub-classes.
